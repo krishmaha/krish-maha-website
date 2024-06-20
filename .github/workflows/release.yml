@@ -1,0 +1,24 @@
+name: release
+
+on:
+  push:
+    branches:
+      - stage
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    environment:
+      name: Semver 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Run Semantic Release
+        id: semantic_release
+        uses: cycjimmy/semantic-release-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_VERSIONING }}
+          DEBUG: semantic-release:*
