@@ -9,7 +9,7 @@ const AnimatedLetters = ({ letterClass, strArray, idx }) => {
         <span
           key={char + i}
           className={`${letterClass} _${i + idx}`}
-          style={{ display: 'inline-block', animationDelay: 0 }} 
+          style={{ display: 'inline-block', animationDelay: letterClass === 'text-animate' ? `${i * 0.1}s` : '0s' }} 
         >
           {char === ' ' ? '\u00A0' : char}
         </span>
