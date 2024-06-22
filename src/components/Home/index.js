@@ -1,4 +1,3 @@
-// import LogoTitle from '../../assets/images/krish-logo.png';
 import { Link } from 'react-router-dom';
 import './index.scss';
 import '../Layout/index.scss';

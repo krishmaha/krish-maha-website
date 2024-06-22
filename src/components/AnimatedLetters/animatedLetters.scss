@@ -1,6 +1,6 @@
 .text-animate {
   display: inline-block;
-  opacity: 1;
+  opacity: 0; 
   animation: bounceIn 1.5s forwards; 
   animation-fill-mode: forwards;
   min-width: 10px;
@@ -19,19 +19,11 @@
   60% {
     transform: scale(0.8);
   }
-  76% {
+  80% {
     transform: scale(1.1);
   }
-  86% {
-    transform: scale(0.95);
-  }
-  // 93% {
-  //   transform: scale(1.05);
-  // }
-  // 97% {
-  //   transform: scale(0.95);
-  // }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
