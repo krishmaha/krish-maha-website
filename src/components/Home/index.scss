@@ -15,6 +15,7 @@
     margin: 0;
     font-family: monospace;
     font-weight: 700;
+    animation: fadeIn 1s 0.75s backwards;
 
     &::before {
       content:'<h1>';
@@ -36,6 +37,7 @@
       margin-top: 150px;
       left: -15px;
       opacity: 0.6;
+      
     }
 
     img {
@@ -50,4 +52,14 @@
   font-family: monospace;
   font-weight: 700;
   margin: 0;
+  animation: fadeIn 1s 0.75s backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
