@@ -13,10 +13,13 @@ const Home = () => {
         a full-stack developer
         </h1>
         <div className='subheading'>
+          <h2>SWE Intern @ KAIKAKU AI</h2>
           <h2>Computing Student @ Imperial College London</h2>
         </div>
 
-        <Link to='/contact' className='flat-button'>CONTACT ME</Link>
+        <div className='contact-me-container'>
+          <Link to='/contact' className='contact-button'>CONTACT ME</Link>
+        </div>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 .home-page {
-
+  
   .text-zone {
     position: absolute;
     left: 10%;
@@ -26,6 +26,7 @@
       margin-top: -40px;
       left: -15px;
       opacity: 0.6;
+      animation: fadeInTags 1s 1.4s backwards;
     }
 
     &::after {
@@ -34,10 +35,10 @@
       color: #ffd700;
       font-size: 18px;
       position: absolute;
-      margin-top: 150px;
+      margin-top: 210px;
       left: -15px;
       opacity: 0.6;
-      
+      animation: fadeInTags 1s 1.4s backwards;
     }
 
     img {
@@ -46,13 +47,41 @@
   }
 }
 
+
+
 .subheading {
   color: #ffd700;
   font-size: 16px;
   font-family: monospace;
   font-weight: 700;
-  margin: 0;
-  animation: fadeIn 1s 0.75s backwards;
+  margin-top: 10px;
+  animation: fadeIn 1s 1s backwards;
+  height: 160px;
+}
+
+// .contact-me-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.contact-button {
+  color: #ffd700;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #ffd700;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.4s backwards;
+
+  &:hover {
+    background: #ffd700;
+    color: #333;
+  }
 }
 
 @keyframes fadeIn {
@@ -61,5 +90,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeInTags {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
   }
 }
