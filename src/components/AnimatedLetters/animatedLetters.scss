@@ -1,0 +1,37 @@
+.text-animate {
+  display: inline-block;
+  opacity: 1;
+  animation: bounceIn 1.5s forwards; 
+  animation-fill-mode: forwards;
+  min-width: 10px;
+  animation-delay: 0.5s; 
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  76% {
+    transform: scale(1.1);
+  }
+  86% {
+    transform: scale(0.95);
+  }
+  // 93% {
+  //   transform: scale(1.05);
+  // }
+  // 97% {
+  //   transform: scale(0.95);
+  // }
+  100% {
+    transform: scale(1);
+  }
+}
