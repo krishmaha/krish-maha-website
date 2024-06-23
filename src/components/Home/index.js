@@ -3,6 +3,7 @@ import './index.scss';
 import '../Layout/index.scss';
 import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters/animatedLetters';
+import Logo from '../Logo/logo';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -39,6 +40,7 @@ const Home = () => {
           <Link to='/contact' className='contact-button'>CONTACT ME</Link>
         </div>
       </div>
+      <Logo />
     </div>
   );
 };
