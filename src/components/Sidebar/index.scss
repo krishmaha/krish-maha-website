@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 90px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -18,11 +18,11 @@
       height: auto;
 
       &.main-logo {
-        width: 38px;
+        width: 56px;
       }
 
       &.sub-logo {
-        width: 44px;
+        width: 64px;
       }
     }
   }
@@ -37,12 +37,13 @@
     width: 100%;
 
     a {
-      font-size: 22px;
+      font-size: 40px;
       color: '#4d4d4e';
       display: block;
       line-height: 51px;
       height: 51px;
       position: relative;
+      padding: 12px 0;
 
       i {
         transition: all 0.3s ease-out;
@@ -62,7 +63,7 @@
 
       &:after {
         content: '';
-        font-size: 9px;
+        font-size: 16px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -112,9 +113,9 @@
 
     li {
       a {
-        padding: 7px 0;
+        padding: 8px 0;
         display: block;
-        font-size: 15px;
+        font-size: 30px;
         line-height: 16px;
 
         &:hover svg {
