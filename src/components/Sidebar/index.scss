@@ -40,8 +40,8 @@
       font-size: 40px;
       color: '#4d4d4e';
       display: block;
-      line-height: 51px;
-      height: 51px;
+      line-height: 81px;
+      height: 81px;
       position: relative;
       padding: 12px 0;
 
@@ -72,24 +72,30 @@
         text-align: center;
         opacity: 0;
         transition: all 0.3s ease-out;
+        top: 20%;
       }
     }
 
     a.home-link {
       &:after {
         content: 'HOME';
+        font-family: Arial, Helvetica, sans-serif;
+
       }
     }
 
     a.about-link {
       &:after {
         content: 'ABOUT';
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
       }
     }
 
     a.contact-link {
       &:after {
         content: 'CONTACT';
+        font-family: Arial, Helvetica, sans-serif;
       }
     }
 
